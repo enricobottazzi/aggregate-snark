@@ -1,0 +1,13 @@
+[package]
+name = "aggregate-snark"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+snark-verifier-sdk = { git = "https://github.com/privacy-scaling-explorations/snark-verifier"}
+summa-solvency = { git = "https://github.com/summa-dev/summa-solvency", branch = "feat-evm_verifier"}
+halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2", tag = "v2023_04_20"}
+rand = "0.8"
+ark-std = { version = "0.3.0", features = ["print-trace"] }
